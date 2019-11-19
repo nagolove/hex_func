@@ -22,7 +22,7 @@ int main(int argc, char *argv[])
     //int (*codeFunc)(int, int) = mem;
     Func codeFunc = (Func)mem;
     int arg1 = 1, arg2 = 1;
-    printf("Run with (%d, %d) result is %d", arg1, arg2, codeFunc(arg1, arg2));
+    printf("Run with (%d, %d) result is %d", 7, 5, codeFunc(7, 5));
     free(binCode);
     munmap(mem, dataSize);
     return 0;
